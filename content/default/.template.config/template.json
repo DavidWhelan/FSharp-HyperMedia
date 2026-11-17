@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "David Whelan",
+  "classifications": ["f#", "web", "hypermedia"],
+  "description": "A hypermedia focused f# web template",
+  "name": "FSharp Hypermedia Template",
+  "identity": "DavidWhelan.FSharp.Hypermedia",
+  "shortName": "fsharp-hypermedia",
+  "sourceName": "WebTemplate",
+  "tags": {
+    "language": "F#",
+    "type": "solution"
+  }
+}

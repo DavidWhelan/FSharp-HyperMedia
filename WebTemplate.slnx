@@ -1,4 +1,0 @@
-<Solution>
-  <Project Path="src/Assets/WebTemplate.Assets.fsproj" />
-  <Project Path="src/Server/WebTemplate.Server.fsproj" />
-</Solution>
