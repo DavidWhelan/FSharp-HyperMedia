@@ -5,8 +5,9 @@ open Browser.Types
 open Firelight
 open type Firelight.Lit
 open Firelight.Html
+open AutoLoader
 
-let steps = [ 1; 10; 100 ]
+let steps = [ 1; 5; 10; 100 ]
 
 [<AttachMembers>]
 type ClickCounter() =
@@ -49,4 +50,4 @@ type ClickCounter() =
                 stepButton step
         }
 
-defineElement<ClickCounter> "al-click-counter"
+defineComponent<ClickCounter> ()

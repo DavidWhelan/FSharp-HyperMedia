@@ -6,6 +6,7 @@ open Falco.Markup.Components
 open Falco.Datastar
 open Views.Shared
 open Routes
+open ClickCounter
 
 let page =
     Layout.template
@@ -20,7 +21,7 @@ let count = Signal.browser<int> "count"
 let clickResponse =
     _div
         [ _id_ "click-counter" ]
-        [ _clickCounter
+        [ _wc<ClickCounter>
               [ _label_ "Liked"
                 Ds.attr' ("count", (Expr.read count))
                 Ds.onEvent ("count-changed", Stmt.set count (Expr.unsafeRaw "evt.detail")) ]

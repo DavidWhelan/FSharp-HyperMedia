@@ -33,6 +33,8 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
     }
 }
 
+let components = fs.globSync("./components/*.fs");
+
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [viteRequestLogger({ prefix: "/" }), fable()],
@@ -43,7 +45,7 @@ export default defineConfig({
         outDir: '../Server/wwwroot',
         assetsDir: '',
         rolldownOptions: {
-            input: ['js/datastar.js', 'assets/app.css', 'fs/AutoLoader.fs', 'components/ClickCounter.fs'],
+            input: ['js/datastar.js', 'assets/app.css', 'fs/AutoLoader.fs'].concat(components),
             output: {
                 entryFileNames: (chunkInfo) => {
                     if (chunkInfo.facadeModuleId?.endsWith(".fs") && chunkInfo.facadeModuleId?.includes("components")) {

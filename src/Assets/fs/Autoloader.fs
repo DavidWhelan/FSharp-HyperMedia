@@ -1,9 +1,17 @@
 ﻿module AutoLoader
 
 open Fable.Core
+open Fable.Core.JsInterop
 open Browser
 open Browser.Types
+open Firelight
+open type Firelight.Lit
 open MutationObserver
+open Interop
+
+let inline defineComponent<'T when 'T :> LitElement> () =
+    let tagName = createTagName<'T> ()
+    Lit.defineElement<'T> tagName
 
 let capitalize (s: string) =
     if s.Length = 0 then s

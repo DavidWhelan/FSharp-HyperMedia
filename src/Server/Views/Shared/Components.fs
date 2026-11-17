@@ -1,9 +1,12 @@
 ﻿module Falco.Markup.Components
 
+open Interop
+
 module Elem =
-    let clickCounter = Elem.create "al-click-counter"
+    let wc<'T> (attrs: XmlAttribute list) (children: XmlNode list) : XmlNode =
+        let tagName = createTagName<'T> ()
+        Elem.create tagName attrs children
 
 [<AutoOpen>]
 module Html =
-    let inline _clickCounter (attrs: XmlAttribute list) (children: XmlNode list) : XmlNode =
-        Elem.clickCounter attrs children
+    let inline _wc<'T> (attrs: XmlAttribute list) (children: XmlNode list) : XmlNode = Elem.wc<'T> attrs children

@@ -8,6 +8,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Compile Include="fs\Interop.fs" />
 		<Compile Include="fs\MutationObserver.fs" />
 		<Compile Include="fs\AutoLoader.fs" />
 		<Content Include="js\datastar.js" />
