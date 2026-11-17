@@ -1,5 +1,4 @@
 <Solution>
   <Project Path="src/Assets/WebTemplate.Assets.fsproj" />
-  <Project Path="lib/Firelight.Html/Firelight.Html.fsproj" />
   <Project Path="src/Server/WebTemplate.Server.fsproj" />
 </Solution>
