@@ -31,7 +31,3 @@ wapp
     .UseFalco(endpoints)
     .UseFalcoNotFound(ErrorController.notFound)
     .Run()
-
-//TODO add fss to web components
-//TODO add .template file so it is a dotnet template
-//TODO write documentation
