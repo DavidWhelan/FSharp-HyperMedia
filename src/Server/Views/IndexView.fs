@@ -9,8 +9,11 @@ open Routes
 
 let page =
     Layout.template
-        [ _h1 [] [ _text "Example: Click Counter" ]
-          _button [ _id_ "click-counter"; Ds.onClick (Ds.get IndexRoutes.clickRoute) ] [ _text "Click Me" ] ]
+        [ _div
+              [ _id_ "click-container" ]
+              [ _h1 [] [ _text "Example: Click Counter" ]
+                _button [ _id_ "click-counter"; Ds.onClick (Ds.get IndexRoutes.clickRoute) ] [ _text "Click Me" ] ] ]
+
 
 let count = Signal.browser<int> "count"
 

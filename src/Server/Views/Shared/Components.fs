@@ -1,7 +1,7 @@
 ﻿module Falco.Markup.Components
 
 module Elem =
-    let clickCounter = Elem.create "click-counter"
+    let clickCounter = Elem.create "al-click-counter"
 
 [<AutoOpen>]
 module Html =

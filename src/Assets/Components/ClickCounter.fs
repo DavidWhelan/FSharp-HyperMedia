@@ -49,4 +49,4 @@ type ClickCounter() =
                 stepButton step
         }
 
-defineElement<ClickCounter> "click-counter"
+defineElement<ClickCounter> "al-click-counter"
