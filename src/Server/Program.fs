@@ -34,5 +34,4 @@ wapp
 
 //TODO add fss to web components
 //TODO add .template file so it is a dotnet template
-//TODO publish dsls to nuget
 //TODO write documentation
