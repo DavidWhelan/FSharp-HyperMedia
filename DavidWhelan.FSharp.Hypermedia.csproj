@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="content/**/*" Exclude="content/**/bin/**;content/**/obj/**;content/**/fable_modules/**;content/**/node_modules/**" />
+    <Content Include="content/**/*" Exclude="content/**/bin/**;content/**/obj/**;content/**/fable_modules/**;content/**/node_modules/**;content/**/.vs/**" />
     <Compile Remove="**/*" />
   </ItemGroup>
 
